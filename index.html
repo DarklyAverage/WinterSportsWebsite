@@ -66,20 +66,19 @@ animation: fall linear infinite;
 }
 
 @keyframes fall {
-
-0% {
-
-    transform: translateY(0);
-
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      100% {
+        transform: translateY(500px) rotate(360deg); /* Falls down by 500px and rotates */
+      }
 }
 
-100% {
 
-    transform: translateY(100vh);
 
-}
 
-}
+
+
 .snowflake:nth-child(1) {
     left:10%;
     animation-duration:10s
